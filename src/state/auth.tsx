@@ -90,8 +90,6 @@ export function useAuth() {
 }
 
 export function useFriendlyAuthError(err: unknown) {
-  const msg = getErrorMessage(err)
-  if (/network/i.test(msg)) return 'Cannot reach server. Is the backend running on localhost:5000?'
-  return msg
+  return getErrorMessage(err)
 }
 
