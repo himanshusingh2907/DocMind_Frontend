@@ -1,8 +1,8 @@
 import axios, { AxiosError } from 'axios'
 import type { AxiosInstance, AxiosRequestConfig } from 'axios'
 
-const API_BASE_URL = 'http://localhost:5000/api'
- // 'http://localhost:5000'
+const API_BASE_URL = 'https://docmind-n6hm.onrender.com'
+ // 'http://localhost:5000/api'
 
 type RetryConfig = AxiosRequestConfig & { _retry?: boolean }
 
